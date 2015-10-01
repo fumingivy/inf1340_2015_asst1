@@ -12,6 +12,33 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
+print " "
 
-money = 1000.00
-print(money)
+
+# define constant values
+number_of_stocks = 2000
+commission_rate = 0.03
+
+# calculate the amount Lakshmi spent for 2000 stocks
+stock_value = 900.00
+value_purchase = number_of_stocks * stock_value
+
+
+# calculate the amount Lakshmi paid her stockbroker for the purchase
+commission_purchase = value_purchase * commission_rate
+
+
+# calculate the amount Lakshmi made on the sale of 2000 stocks
+stock_value = 942.75
+value_sale = number_of_stocks * stock_value
+
+
+#calculate the amount Lakshmi paid her stockbroker for the sale
+commission_sale = value_sale * commission_rate
+
+
+#calculate the total amount Lakshmi made (or lost) from the sale
+profit = value_sale - commission_sale - value_purchase - commission_purchase
+
+print"Lakshmi made a profit of ", profit, " dollars after the purchase and sale of 2000 stocks."
+print("If Lakshmi's profit is negative, then she lost money on the transactions.")
