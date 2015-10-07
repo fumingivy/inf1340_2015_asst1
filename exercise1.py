@@ -7,11 +7,9 @@ after the stock transactions
 
 """
 
+__author__ = 'Rachel Lee and Ming Fu'
+__email__ = "siuming.lee@mail.utoronto.ca and mm.fu@mail.utoronto.ca"
 
-__author__ = 'Susan Sim'
-__email__ = "ses@drsusansim.org"
-__copyright__ = "2015 Susan Sim"
-__license__ = "MIT License"
 
 print " "
 
@@ -19,6 +17,7 @@ print " "
 # define constant values
 number_of_stocks = 2000
 commission_rate = 0.03
+
 
 # calculate the amount Lakshmi spent for 2000 stocks
 stock_value = 900.00
