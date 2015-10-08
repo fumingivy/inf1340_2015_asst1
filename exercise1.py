@@ -10,9 +10,10 @@ after the stock transactions
 __author__ = 'Rachel Lee and Ming Fu'
 __email__ = "siuming.lee@mail.utoronto.ca and mm.fu@mail.utoronto.ca"
 
-# Test case:
-#input: none
-#expected output: -25065.0
+# Test:
+#Input: none
+#Expected output: -25065.0
+#Actual output: -25065.0
 
 
 

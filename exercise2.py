@@ -17,42 +17,52 @@ def name_that_shape():
     Test 1:
     Input: 3
     Expected Output:triangle
+    Actual Output: triangle
 
     Test 2:
     Input: 4
     Expected Output: quadrilateral
+    Actual Output: quadrilateral
 
     Test 3:
     Input: 5
     Expected Output: pentagon
+    Actual Output: pentagon
 
     Test 4:
     Input: 6
     Expected Output: hexagon
+    Actual Output: hexagon
 
     Test 5:
     Input: 7
     Expected Output: heptagon
+    Actual Output: heptagon
 
     Test 6:
     Input: 8
     Expected Output: octagon
+    Actual Output: octagon
 
     Test 7:
     Input: 9
     Expected Output: nonagon
+    Actual Output:nonagon
 
     Test 8:
     Input: 10
     Expected Output: decagon
+    Actual Output: decagon
 
     Test 9:
     Input: 2
     Expected Output: Error
+    Actual Output: Error
 
     Test 10:
     Input: 12
     Expected Output: Error
+    Actual Output: Error
 
     """
 # name the input
@@ -87,4 +97,4 @@ def name_that_shape():
     else:
         print("Error")
 
-name_that_shape()
+#name_that_shape()
