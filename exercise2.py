@@ -36,22 +36,22 @@ def name_that_shape():
 
 # name the expected output
     if number_of_sides == side3:
-        print("Triangle")
+        print("triangle")
     elif number_of_sides == side4:
-        print("Quadrilateral")
+        print("quadrilateral")
     elif number_of_sides == side5:
-        print("Pentagon")
+        print("pentagon")
     elif number_of_sides == side6:
-        print("Hexagon")
+        print("hexagon")
     elif number_of_sides == side7:
-        print("Heptagon")
+        print("heptagon")
     elif number_of_sides == side8:
-        print("Octagon")
+        print("octagon")
     elif number_of_sides == side9:
-        print("Nonagon")
+        print("nonagon")
     elif number_of_sides == side10:
-        print("Decagon")
+        print("decagon")
     else:
         print("Error")
 
-name_that_shape()
+#name_that_shape()
