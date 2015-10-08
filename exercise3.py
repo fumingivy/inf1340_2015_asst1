@@ -51,6 +51,8 @@ Test 7:
     Expected Outputs: Get it in for service.
     Actual Output: Get it in for service.
     """
+# program codes following the decision tree:
+
     answer = raw_input("Is the car silent when you turn the key? (Y/N)")
     if answer == "Y":
         answer = raw_input("Are the battery terminals corroded?(Y/N)")
@@ -77,6 +79,5 @@ Test 7:
                         print("Check to ensure the choke is opening and closing.")
                     elif answer == "Y":
                         print("Get it in for service.")
-
 
 #diagnose_car()
