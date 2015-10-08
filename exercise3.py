@@ -23,32 +23,32 @@ def diagnose_car():
     Errors:
 
     """
-    answer = raw_input("Is the car silent when you turn the key? (Y/N)")
-
+answer = raw_input("Is the car silent when you turn the key? (Y/N)")
+if answer == "Y":
+    answer = raw_input("Are the battery terminals corroded?(Y/N)")
     if answer == "Y":
-        print("Are the battery terminals corroded?")
-        if answer == "Y":
-            print("The battery terminals are corroded. Clean terminals and try starting again.")
-        elif answer == "N":
-            print("The battery cables may be damaged.Replace cables and try again.")
+        print("Clean terminals and try starting again.")
     elif answer == "N":
-        print("Does the car make a clicking noise?")
+        print("Replace cables and try again.")
+
+elif answer == "N":
+    answer = raw_input("Does the car make a clicking noise?(Y/N)")
+    if answer == "Y":
+        print("Replace the battery.")
+    elif answer == "N":
+        answer = raw_input("Does the car crank up but fail to start?")
         if answer == "Y":
-            print("Battery is not work correctly. Replace the battery.")
+            print("Check spark plug connections.")
         elif answer == "N":
-            print("Does the car crank up but fail to start?")
-            if answer == "Y":
-                print("Check spark plug connections.")
-            elif answer == "N":
-                print("Does the engine start and then die?")
-                if answer == "Y":
-                    print("Does your car have fuel injection?")
-                    if answer == "Y":
-                        print("Your car needs to be fix. Get it in for service.")
-                    elif answer == "N":
-                        print("Check to ensure the choke is opening and closing.")
-                else:
-                    print("Engine is not getting enough fuel. Clean fuel pump.")
+            answer = raw_input("Does the engine start and then die?")
+            if answer == "N":
+                print("Engine is not getting enough fuel. Clean fuel pump.")
+            elif answer == "Y":
+                answer = raw_input("Does your car have fuel injection?")
+                if answer == "N":
+                    print("Check to ensure the choke is opening and closing.")
+                elif answer == "Y":
+                    print("Get it in for service.")
 
 
 diagnose_car()
