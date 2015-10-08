@@ -16,12 +16,33 @@ def diagnose_car():
     Interactively queries the user with yes/no questions to identify a
     possible issue with a car.
 
-    Inputs:
+Test 1:
+    Inputs: Y, Y
+    Expected Outputs: Clean terminals and try starting again
 
-    Expected Outputs:
+Test 2:
+    Inputs: Y, N
+    Expected Outputs: Replace cables and try again.
 
-    Errors:
+Test 3:
+    Inputs: N, Y
+    Expected Outputs: Replace the battery.
 
+Test 4:
+    Inputs: N, N, Y
+    Expected Outputs: Check spark plug connections.
+
+Test 5:
+    Inputs: N, N, N, N
+    Expected Outputs: Engine is not getting enough fuel. Clean fuel pump.
+
+Test 6:
+    Inputs: N, N, N, Y, N
+    Expected Outputs: Check to ensure the choke is opening and closing.
+
+Test 7:
+    Inputs: N, N, N, Y, Y
+    Expected Outputs: Get it in for service.
     """
     answer = raw_input("Is the car silent when you turn the key? (Y/N)")
     if answer == "Y":
@@ -51,4 +72,4 @@ def diagnose_car():
                         print("Get it in for service.")
 
 
-#diagnose_car()
+diagnose_car()

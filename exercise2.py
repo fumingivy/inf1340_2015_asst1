@@ -14,12 +14,45 @@ __email__ = "siuming.lee@mail.utoronto.ca and mm.fu@mail.utoronto.ca"
 def name_that_shape():
     """
     For a given number of sides in a regular polygon, returns the shape name
+    Test 1:
+    Input: 3
+    Expected Output:triangle
 
-    Inputs:
+    Test 2:
+    Input: 4
+    Expected Output: quadrilateral
 
-    Expected Outputs:
+    Test 3:
+    Input: 5
+    Expected Output: pentagon
 
-    Errors:
+    Test 4:
+    Input: 6
+    Expected Output: hexagon
+
+    Test 5:
+    Input: 7
+    Expected Output: heptagon
+
+    Test 6:
+    Input: 8
+    Expected Output: octagon
+
+    Test 7:
+    Input: 9
+    Expected Output: nonagon
+
+    Test 8:
+    Input: 10
+    Expected Output: decagon
+
+    Test 9:
+    Input: 2
+    Expected Output: Error
+
+    Test 10:
+    Input: 12
+    Expected Output: Error
 
     """
 # name the input
@@ -34,7 +67,7 @@ def name_that_shape():
     side9 = "9"
     side10 = "10"
 
-# name the expected output
+# assign a response to each expected output
     if number_of_sides == side3:
         print("triangle")
     elif number_of_sides == side4:
@@ -54,4 +87,4 @@ def name_that_shape():
     else:
         print("Error")
 
-#name_that_shape()
+name_that_shape()
